@@ -1,0 +1,13 @@
+# 飞机检测数据集配置文件
+
+# 数据集路径
+path: E:/YOLOV11/ultralytics-v11/datasets/plane  # 数据集根目录
+train:  # 训练图像
+  optical: E:/YOLOV11/ultralytics-v11/datasets/plane/images/filtered  # 源域（光学图像）
+  sar: E:/YOLOV11/ultralytics-v11/datasets/plane/images/SAR_train3  # 目标域（SAR图像）
+val: ../plane_3/images/total  # 验证图像（相对于'path'）
+test: ../plane_3/images/total  # 测试图像（相对于'path'）
+
+# 类别
+names:
+  0: plane  # 飞机类别 set KMP_DUPLICATE_LIB_OK=TRUE
